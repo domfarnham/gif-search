@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import axios from 'axios'
 import SearchForm from './components/SearchForm'
-// import GifList from './Components/GifList'
+import GifList from './components/GifList'
 
 export default class App extends Component {
   state = {
@@ -30,7 +30,7 @@ export default class App extends Component {
           </div>
         </div>
         <div className='main-content'>
-          {/* <GifList /> */}
+          <GifList data={this.state.gifs}/>
         </div>
       </div>
     )
